@@ -1,0 +1,32 @@
+:root { color-scheme: light; --ink: #182d35; --muted: #52666d; --accent: #126456; --line: #d7e2df; --paper: #ffffff; --background: #f3f6f4; }
+* { box-sizing: border-box; }
+html { scroll-padding-top: 2rem; }
+body { margin: 0; background: var(--background); color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1rem; line-height: 1.75; }
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
+.skip-link { position: absolute; top: -6rem; left: 1rem; padding: .6rem 1rem; background: white; z-index: 1; }
+.skip-link:focus { top: 1rem; }
+.site-header, main, .site-footer { width: min(100% - 3rem, 800px); max-width: 800px; margin-inline: auto; }
+.site-header { padding-block: 2rem; border-bottom: 1px solid var(--line); }
+.brand { font-size: .85rem; font-weight: 750; letter-spacing: .12em; }
+.site-header nav { margin-top: .6rem; font-size: .95rem; }
+main { padding-block: 3.5rem; }
+h1, h2, h3 { line-height: 1.25; letter-spacing: -.025em; }
+h1 { font-size: clamp(2.2rem, 7vw, 3.5rem); margin: .4rem 0 1rem; }
+h2 { font-size: 1.4rem; margin: 2.5rem 0 .75rem; }
+h3 { font-size: 1.2rem; }
+p { margin: .75rem 0; }
+.eyebrow { color: var(--accent); font-size: .8rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+.lead { color: var(--muted); font-size: 1.15rem; }
+.card, .summary { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 1.5rem; margin-top: 2rem; }
+.card h2 { margin-top: 0; }
+.metadata { color: var(--muted); }
+.metadata strong { color: var(--ink); }
+.contents { margin-top: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.contents ul { padding-left: 1.25rem; columns: 2; column-gap: 2rem; }
+.contents li { break-inside: avoid; margin-bottom: .4rem; }
+li { padding-left: .15rem; }
+.contact-details { border-left: 3px solid var(--accent); padding: .75rem 1rem; background: #e6eeea; overflow-wrap: anywhere; }
+.site-footer { padding-block: 1.5rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+@media (max-width: 520px) { main { padding-block: 2rem; } .contents ul { columns: 1; } .card, .summary { padding: 1.15rem; } }
